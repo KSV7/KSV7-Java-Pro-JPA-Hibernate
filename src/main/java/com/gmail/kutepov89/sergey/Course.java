@@ -9,8 +9,7 @@ import java.util.List;
 @Table(name="Courses")
 @NamedQueries({
         @NamedQuery(name="Course.findAll", query = "SELECT c FROM Course c"),
-        @NamedQuery(name="Course.findByName", query = "SELECT c FROM Course c WHERE c.name = :name"),
-        @NamedQuery(name="Course.countClientByNameCourse", query = "SELECT COUNT(c) FROM Course c WHERE c.name = :name")
+        @NamedQuery(name="Course.findByName", query = "SELECT c FROM Course c WHERE c.name = :name")
 })
 public class Course {
     @Id
